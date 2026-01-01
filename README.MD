@@ -1,4 +1,4 @@
-# 🎮 Mini Games Website
+# 🎮 Full-Stack Mini Games Website
 
 A full-stack **Mini Games Website** built with **React**, **Node.js**, **Express**, and **PostgreSQL**, featuring **5 mini games** with **algorithmic implementations**, **leaderboards**, and **API integration**. This project showcases **data structures, algorithms, database migrations, and RESTful APIs**.
 
@@ -52,7 +52,6 @@ Frontend (React) <--> Backend (Node.js + Express) <--> PostgreSQL Database
 ```bash
 git clone <your-repo-url>
 cd mini-games-website
-
 cd backend
 npm install
 
@@ -74,25 +73,13 @@ createdb mini_games_db
 # Run migrations
 npx sequelize-cli db:migrate
 
-# Start backend
-npx nodemon index.js
-
 cd ../frontend
 npm install
+
+# In the project root (mini-games-website)
+npm install --save-dev concurrently  # if not already installed
 npm start
 
-mini-games-website/
-├─ backend/
-│  ├─ config/          # Database config
-│  ├─ migrations/      # Sequelize migrations
-│  ├─ models/          # Sequelize models
-│  ├─ seeders/         # Optional seed data
-│  └─ index.js         # Express server
-├─ frontend/
-│  ├─ src/
-│  │  ├─ pages/        # Home, Leaderboard
-│  │  ├─ components/   # Game1 to Game5
-│  │  ├─ api.js        # Axios API calls
-│  │  └─ App.js        # Router
-└─ README.md
+Frontend: http://localhost:3000
 
+Backend: http://localhost:5000

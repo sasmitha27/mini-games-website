@@ -1,0 +1,26 @@
+{
+  "name": "mini-games-website",
+  "version": "1.0.0",
+  "description": "A full-stack **Mini Games Website** built with **React**, **Node.js**, **Express**, and **PostgreSQL**, featuring **5 mini games** with **algorithmic implementations**, **leaderboards**, and **API integration**. This project showcases **data structures, algorithms, database migrations, and RESTful APIs**.",
+  "main": "index.js",
+  "scripts": {
+  "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+  "start-backend": "cd backend && npx nodemon index.js",
+  "start-frontend": "cd frontend && npm start"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasmitha27/mini-games-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sasmitha27/mini-games-website/issues"
+  },
+  "homepage": "https://github.com/sasmitha27/mini-games-website#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
